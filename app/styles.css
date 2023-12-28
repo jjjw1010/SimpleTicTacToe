@@ -1,0 +1,134 @@
+/* Small Screen */
+
+@media (max-width: 700px) {
+  :root {
+    --font-size-large: 40px;
+    --font-size-medium: 15px;
+    --font-size-small: 10px;
+    --square-size: 50px;
+    --spacing: 5px;
+  }
+}
+
+/* Medium Screen */
+@media (min-width: 701px) and (max-width: 1050px) {
+  :root {
+    --font-size-large: 60px;
+    --font-size-medium: 25px;
+    --font-size-small: 15px;
+    --square-size: 65px;
+    --spacing: 10px;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 1051px) {
+  :root {
+    --font-size-large: 80px;
+    --font-size-medium: 35px;
+    --font-size-small: 15px;
+    --square-size: 80px;
+    --spacing: 10px;
+  }
+}
+
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 20px;
+  min-width: 350px;
+  padding: 0px;
+}
+.title {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  .title-style {
+    color: #000;
+    text-align: center;
+    font-size: var(--font-size-large);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+.square {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 2px;
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  font-size: var(--font-size-medium);
+  line-height: var(--square-size);
+  height: var(--square-size);
+  width: var(--square-size);
+}
+
+.board-row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing);
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: var(--font-size-medium);
+  width: var(--width-status);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: 500;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.history-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-medium);
+  font-weight: 500;
+  padding: var(--spacing);
+}
+ol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: var(--spacing);
+  height: fit-content;
+}
+li,
+.new-game {
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: var(--font-size-small);
+  text-align: center;
+  padding: var(--spacing);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--square-size);
+}
+.new-game {
+  font-weight: 500;
+  font-size: var(--font-size-medium);
+}
