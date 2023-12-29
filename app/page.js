@@ -104,7 +104,7 @@ export default function Game() {
   return (
     <div className='frame'>
       <div className='title'>
-        <div className='title-style'>Tik Tac Toe</div>
+        <div className='title-style'>Tic Tac Toe</div>
       </div>
 
       <div className='game'>
@@ -115,7 +115,7 @@ export default function Game() {
         <ol>{moves}</ol>
       </div>
       <button className='new-game' onClick={() => newGame()}>
-        {'NewGame'}
+        {'New Game'}
       </button>
       <div>Credit to React Tic-Tac-Toe Tutorial</div>
     </div>
