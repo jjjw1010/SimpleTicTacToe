@@ -1,6 +1,6 @@
 /* Small Screen */
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   :root {
     --font-size-large: 40px;
     --font-size-medium: 15px;
@@ -11,7 +11,7 @@
 }
 
 /* Medium Screen */
-@media (min-width: 701px) and (max-width: 1050px) {
+@media (min-width: 751px) and (max-width: 1050px) {
   :root {
     --font-size-large: 60px;
     --font-size-medium: 25px;
